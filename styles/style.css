@@ -92,7 +92,7 @@ h2 span {
   ====================*/
 .card-container {
   background-color: #1b1938;
-  max-width: 1440px;
+  width: 1100px;
   max-height: 700px;
   min-height: 450px;
   margin: 0 150px;
@@ -106,8 +106,8 @@ h2 span {
       Card Info 
   ====================*/
 .card-info {
-  width: 55%;
-  padding: 80px 80px 0 80px;
+  width: 60%;
+  padding: 80px 50px 0 80px;
 }
 
 .card-info p {
@@ -245,7 +245,7 @@ img {
     border-radius: 10px 10px 0 0;
   }
   .overlay {
-    height: 99.3%;
+    height: 100%;
     border-radius: 10px 10px 0 0;
   }
   /*==================
