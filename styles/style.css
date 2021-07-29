@@ -195,7 +195,7 @@ img {
       Card Container
   ====================*/
   .card-container {
-    margin: 50px;
+    margin: 150px 50px 50px 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
