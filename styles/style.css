@@ -180,7 +180,7 @@ img {
     font-size: 0.7rem;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   h2 span {
     font-size: 0.7rem;
@@ -195,7 +195,7 @@ img {
       Card Container
   ====================*/
   .card-container {
-    margin: 25px;
+    margin: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -243,6 +243,7 @@ img {
   img {
     width: 100%;
     border-radius: 10px 10px 0 0;
+    margin-bottom: -4px;
   }
   .overlay {
     height: 100%;

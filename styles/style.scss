@@ -167,7 +167,7 @@
   }
 
   h2{
-    font-size: 1rem;
+    font-size: 1.2rem;
     span{
       font-size: 0.7rem;
     }
@@ -186,7 +186,7 @@
   ====================*/
 
   .card-container{
-    margin: 25px;
+    margin: 50px;
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
@@ -228,6 +228,7 @@
   img{
     width: 100%;
     border-radius: 10px 10px 0 0;
+    margin-bottom: -4px;
   }
 
   .overlay{
