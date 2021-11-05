@@ -6,10 +6,15 @@ Table of Contents
 2. Main Container Style
   2.0 - Main container
   2.1 - Info Container
-    2.1.1 - Stats Container
-  2.2 - Image Container
+  2.2 - Stats Container
+  2.3 - Image Container
 3. Attribution
 4. Media
+  4.0 - Media Main Container
+  4.1 - Media Info Container
+  4.2 - Media Stats Container
+  4.3 - Media Image Container
+
 
 ================================================================================================*/
 /*================================================================================================
@@ -50,7 +55,7 @@ body {
 /*================================================================================================
   1. Main Container Style
 ================================================================================================*/
-/*========= Main Container =======================================================================================*/
+/*========= 2.0 - Main Container =======================================================================================*/
 .main-container {
   -ms-grid-column: 2;
       grid-column-start: 2;
@@ -68,7 +73,7 @@ body {
   width: 100%;
 }
 
-/*========= Info Container =======================================================================================*/
+/*========= 2.1 Info Container =======================================================================================*/
 .info-container {
   width: 50%;
   padding: 50px;
@@ -94,7 +99,7 @@ body {
   line-height: 2;
 }
 
-/*========= Stats Container =======================================================================================*/
+/*========= 2.2 - Stats Container =======================================================================================*/
 .stats-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,7 +126,7 @@ body {
   margin-top: 5px;
 }
 
-/*========= Image Container =======================================================================================*/
+/*========= 2.3 - Image Container =======================================================================================*/
 .image-container {
   background: url(../images/image-header-desktop.jpg) no-repeat;
   background-size: cover;
@@ -158,6 +163,60 @@ body {
         grid-template-columns: 1fr 8fr 1fr;
     -ms-grid-rows: 1fr 4fr 1fr;
         grid-template-rows: 1fr 4fr 1fr;
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  body {
+    -ms-grid-columns: 1fr 8fr 1fr;
+        grid-template-columns: 1fr 8fr 1fr;
+    -ms-grid-rows: 1fr 8fr 1fr;
+        grid-template-rows: 1fr 8fr 1fr;
+  }
+  /*========= 4.0 - Media Main Container =======================================================================================*/
+  .main-container {
+    height: 100%;
+    overflow: scroll;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  /*========= 4.1 - Media Info Container =======================================================================================*/
+  .info-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow: scroll;
+  }
+  .main-title {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 0.8rem;
+    margin-bottom: 50px;
+  }
+  /*========= 4.2 - Media Stats Container =======================================================================================*/
+  .stats-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .stat-title {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  .stat-description {
+    font-size: 0.8rem;
+  }
+  /*========= 4.3 - Media Image Container =======================================================================================*/
+  .image-container {
+    background: url(../images/image-header-mobile.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
