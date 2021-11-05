@@ -1,1 +1,163 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/*================================================================================================
+
+Table of Contents
+
+1. Global Styles
+2. Main Container Style
+  2.0 - Main container
+  2.1 - Info Container
+    2.1.1 - Stats Container
+  2.2 - Image Container
+3. Attribution
+4. Media
+
+================================================================================================*/
+/*================================================================================================
+  1. Global Styles
+================================================================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/*===========
+  General
+  ===========*/
+/*============
+  Fonts Colors
+  ============*/
+/*=============
+  Fonts Family
+  =============*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-color: #090b1a;
+  font-size: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+/*================================================================================================
+  1. Main Container Style
+================================================================================================*/
+/*========= Main Container =======================================================================================*/
+.main-container {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  background-color: #1b1938;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+/*========= Info Container =======================================================================================*/
+.info-container {
+  width: 50%;
+  padding: 50px;
+  padding-right: 100px;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.main-title span {
+  color: #aa5cdb;
+}
+
+.description {
+  font-size: 1rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 30px;
+  margin-bottom: 70px;
+  line-height: 2;
+}
+
+/*========= Stats Container =======================================================================================*/
+.stats-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stat-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.stat-description {
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  margin-top: 5px;
+}
+
+/*========= Image Container =======================================================================================*/
+.image-container {
+  background: url(../images/image-header-desktop.jpg) no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.image {
+  background-color: rgba(94, 0, 153, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+/*================================================================================================
+  3. Attribution
+================================================================================================*/
+.attribution {
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*================================================================================================
+  4. Media
+================================================================================================*/
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  body {
+    -ms-grid-columns: 1fr 8fr 1fr;
+        grid-template-columns: 1fr 8fr 1fr;
+    -ms-grid-rows: 1fr 4fr 1fr;
+        grid-template-rows: 1fr 4fr 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */

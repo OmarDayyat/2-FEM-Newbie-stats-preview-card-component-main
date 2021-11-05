@@ -1,0 +1,147 @@
+/*================================================================================================
+
+Table of Contents
+
+1. Global Styles
+2. Main Container Style
+  2.0 - Main container
+  2.1 - Info Container
+    2.1.1 - Stats Container
+  2.2 - Image Container
+3. Attribution
+4. Media
+
+================================================================================================*/
+
+/*================================================================================================
+  1. Global Styles
+================================================================================================*/
+
+@import "variables";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  position: relative;
+  background-color: $main-background ;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+/*================================================================================================
+  1. Main Container Style
+================================================================================================*/
+
+/*========= Main Container =======================================================================================*/
+
+.main-container{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  background-color: $card-background;
+  overflow: hidden;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*========= Info Container =======================================================================================*/
+
+.info-container{
+  width: 50%;
+  padding: 50px;
+  padding-right: 100px;
+}
+
+.main-title{
+  font-size: 2.5rem;
+  font-family: $header-font;
+  color: $main-heading-stats;
+  span{
+    color: $accent;
+  }
+}
+
+.description{
+  font-size: 1rem;
+  font-family: $paragraph-font;
+  color: $main-paragraph;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  line-height: 2;
+}
+
+/*========= Stats Container =======================================================================================*/
+
+.stats-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: $header-font;
+  color: $main-heading-stats;
+}
+
+.stat-description{
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: $paragraph-font;
+  text-transform: uppercase;
+  color: $stat-headings;
+  display: block;
+  margin-top: 5px;
+}
+
+/*========= Image Container =======================================================================================*/
+
+.image-container{
+  background: url(../images/image-header-desktop.jpg) no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.image{
+  background-color: $accent-dark;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+/*================================================================================================
+  3. Attribution
+================================================================================================*/
+
+.attribution{
+  color: $main-heading-stats;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*================================================================================================
+  4. Media
+================================================================================================*/
+
+@media screen and (min-device-width: 1200px) and (max-device-width:1600px){
+
+  body{
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+  }
+
+}
