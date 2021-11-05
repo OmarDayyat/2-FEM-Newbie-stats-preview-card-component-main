@@ -157,7 +157,7 @@ body {
 /*================================================================================================
   4. Media
 ================================================================================================*/
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+@media screen and (min-device-width: 1201px) and (max-device-width: 1600px) {
   body {
     -ms-grid-columns: 1fr 8fr 1fr;
         grid-template-columns: 1fr 8fr 1fr;
@@ -166,7 +166,7 @@ body {
   }
 }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-device-width: 1200px) {
   body {
     -ms-grid-columns: 1fr 8fr 1fr;
         grid-template-columns: 1fr 8fr 1fr;
